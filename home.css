@@ -1,0 +1,162 @@
+ * { margin: 0; padding: 0; box-sizing: border-box; } 
+ 
+ 
+ 
+ html { font-size: 62.5%; font-family:  sans-serif; }
+ 
+ 
+ 
+ li { list-style: none; } 
+ 
+ a { text-decoration: none; }
+
+.header{ border-bottom: 1px solid #ffffff; } 
+
+
+.navbar { display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 1.5rem;
+background-color:transparent }
+
+.hamburger { display: none;
+
+    color:aliceblue;} 
+
+.bar { display: block; width: 25px;
+    
+    height: 3px; margin: 5px auto;
+    
+    -webkit-transition: all 0.3s ease-in-out; 
+    
+    transition: all 0.3s ease-in-out;
+    
+    background-color: #ffffff; }
+
+.nav-menu { display: flex; justify-content: space-between; 
+    
+    align-items: center; }
+
+
+.nav-item { margin-left: 5rem; } 
+
+.nav-link{ font-size: 1.6rem; font-weight: 400; color: #475569; } 
+
+
+.nav-link:hover{ color: #482ff7; } 
+
+
+.nav-logo { font-size: 2.1rem;
+
+     font-weight: 500;
+    
+    color: #d6d6d6; }
+
+
+@media only screen and (max-width: 768px)
+ { .nav-menu 
+    
+    { position: fixed; left: -100%; top: 4.6rem; flex-direction: column;
+        
+        
+        background-color: #fff; width: 100%; border-radius: 2px; 
+        
+        
+        text-align: center; transition: 0.3s; box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    
+    }
+    
+    .nav-menu.active { left: 0; } 
+    
+    .nav-item { margin: 2.5rem 0; }
+    
+    .hamburger { 
+        color:aliceblue;
+        
+        display: block; cursor: pointer; }
+
+
+
+
+
+
+        .hamburger.active .bar:nth-child(2) { opacity: 0; } 
+        
+        .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg);
+        
+        } 
+        
+        
+        .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); 
+        
+        
+        }
+
+
+
+
+
+    
+    }
+
+
+
+
+
+
+
+    /* Style for the Metal Fabricator section */
+.metal-fabricator {
+
+  
+
+    text-align: center;
+    color: white;
+    
+  }
+  
+  /* Style for the text in the Metal Fabricator section */
+  .text {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-family: cursive;
+    color:#f3dacd;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+   p {
+    font-size: 15px;
+  }
+  
+  /* Style for the buttons */
+  .buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blue-button {
+    background-color: #054b97;
+    color: white;
+    padding: 15px 25px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  /* Media query for small devices */
+  @media screen and (max-width: 768px) {
+    .buttons {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+
+  
