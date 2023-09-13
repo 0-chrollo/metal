@@ -13,7 +13,7 @@
 
  <header class="header"> 
   <nav class="navbar"> 
-    <a href="#" class="nav-logo">RadCorn.</a> 
+    <a style="background-color: rgba(0, 65, 177, 0.762);width: 95px; padding-top: 3px;padding-left: 8px;width:100px; height: 29px;  border-radius:4px;" href="#" class="nav-logo">RadCorn.</a> 
        <ul class="nav-menu"> 
           <li class="nav-item">
              <a href="#" class="nav-link">Services</a> 
@@ -23,7 +23,7 @@
                
                <li class="nav-item"> <a href="#" class="nav-link">About</a> </li> 
                <li class="nav-item"> <a href="#" class="nav-link">Contact</a> </li> 
-              </ul> <div class="hamburger"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> 
+              </ul> <div class="hamburger" style="background-color: rgba(0, 65, 177, 0.762);width: 40px; height: 29px;  border-radius:4px;"><span class="bar"></span> <span class="bar"></span> <span class="bar"></span> 
               </div> 
             </nav>         
  </header>
@@ -53,10 +53,84 @@ navMenu.classList.toggle("active");
 <main class="main-image"style="padding-top:13%; font-size: 155%; margin-top:-50px;     background-image:URL(metal.jpg); background-repeat:no-repeat;  background-size:cover;">
   
 
-   <div class="metal-fabricator" style="background-color: rgba(0, 65, 177, 0.581); margin: 0px 10px 50px; border-radius: 10px;">
+   <div class="metal-fabricator">
+    <div style="background-color: rgba(0, 65, 177, 0.581); margin: 0px 10px 20px; border-radius: 10px;">
      <br> <i style="font-size:40px; color: rgba(199, 201, 242, 0.66);" class="fas fa-cogs"></i> <!-- Font Awesome settings icon -->
-     <h1>Radcon Engineering</h1>
-     <p style="padding-bottom: 10px;font-size: 25px;">-----------</p>
+     <h1>Radcon Engineering</h1><br>
+    </div>
+     <style>
+   
+        /* Add your CSS styles here for further customization */
+        .contain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+             /* Center vertically on the screen */
+        }
+
+        .find-us {
+      
+          padding-left:50px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            background-color: rgba(9, 31, 131, 0.593);
+            padding: 11px; /* Adjust padding as needed */
+        }
+
+        .call-icon {
+            background-color: blue;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 10px;
+           
+
+          }
+        .contact-number {
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <div class="contain">
+        <div class="find-us">
+          <div class="call-icon">
+             <!-- Replace +123456789 with the actual phone number -->
+             <i class="fas fa-phone" style="transform: rotate(90deg);"> <!-- Font Awesome call icon rotated 180 degrees -->
+             <a href="tel:0720760261"></a></i> <!-- Font Awesome call icon -->
+           
+       
+            </div>
+            <div class="contact-number">
+                0735246283
+            </div>
+        </div>
+    </div>
+<br>
+
+<div class="contain">
+  <div class="find-us">
+    <div class="call-icon">
+       <!-- Replace +123456789 with the actual phone number -->
+       <i class="fas fa-envelope"><!-- Font Awesome call icon rotated 180 degrees -->
+       <a  href="mailto:radcon@gmail.com"></a></i> <!-- Font Awesome call icon -->
+     
+ 
+      </div>
+      <div class="contact-number">
+          radcon@gmail.co.za
+      </div>
+  </div>
+</div>
+<br>
+
+
+
+
+
+<div style="background-color: rgba(0, 65, 177, 0.581); margin: 0px 10px 30px; border-radius: 10px;">
+     <p style="padding-bottom: 5px;font-size: 25px;">-----------</p>
       <p class="intro">Welcome to our Metal Fabrication services. We specialize in crafting high-quality metal products tailored to your specifications. Our skilled team ensures precision and excellence in every project.</p>
       <br>
     </div>
@@ -83,10 +157,10 @@ navMenu.classList.toggle("active");
       align-items: center;
   }
 
-  /* Style for the links */
+  /* Style for the links */ 
   .link {
       text-decoration: none;
-      margin-right: 15px;
+      margin-right: 5px;
       margin-left: 10px; /* Adjust the spacing as needed */
       color: #333; /* Text color */
       padding: 20px; /* Add padding to links */
@@ -102,7 +176,7 @@ navMenu.classList.toggle("active");
 
   /* Style for the forward icon */
   .forward-icon {
-    padding-right:13px;
+    padding-right:5px;
       font-size:13.5px;
       color: rgb(0, 0, 255); /* Set the forward icon color to blue */
   }
@@ -113,7 +187,7 @@ navMenu.classList.toggle("active");
       <i class="fas fa-home icon" style="color: blue;"></i>
      <u style="font-size: 12px;"><b>Radcorn-Home</b></u>
   </a><u></u>
-  <span class="forward-icon"> >
+  <span class="forward-icon"> 
       &gt; >
   </span>
   <a class="link" href="#categories">
