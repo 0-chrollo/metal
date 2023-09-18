@@ -163,3 +163,66 @@ background-color:transparent }
   
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .chat-button {
+    position: fixed;
+  bottom: 10px;
+    right: 20px;
+    background-color:#295480cb;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure the button is above other content */
+    animation: pulseEffect 2s infinite; /* Add the pulsing animation */
+}
+
+@keyframes pulseEffect {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 10px rgba(0, 123, 255, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.chat-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color:  #ececece6;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/* Customize the bot icon's appearance */
+.fa-robot::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f544"; /* Unicode for the bot icon */
+}
+/****************************************************************/
