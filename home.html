@@ -16,13 +16,13 @@
     <a style="color: rgb(0, 65, 177);width: 95px; padding-top: 3px;padding-left: 8px;width:100px; height: 29px;  border-radius:4px;" href="#" class="nav-logo">RadCon.</a> 
        <ul class="nav-menu"> 
           <li class="nav-item">
-             <a href="#" class="nav-link">Services</a> 
+              <a href="#" class="nav-link">Services</a> 
             </li> 
             <li class="nav-item">
                <a href="#" class="nav-link">Blog</a> </li> 
                
                <li class="nav-item"> <a href="#" class="nav-link">About</a> </li> 
-               <li class="nav-item"> <a href="#" class="nav-link">Contact</a> </li> 
+               <li  class="nav-item"> <a href="#"  id="contact"class="nav-link">Contact</a> </li> 
                
               </ul> <div class="hamburger" style="color: rgba(0, 65, 177, 0.762);width: 40px; height: 29px;  border-radius:4px;"><span class="bar"></span> <span class="bar"></span> <span class="bar"></span> 
               </div> 
@@ -107,7 +107,7 @@ navMenu.classList.toggle("active");
     </div>
    
     <div class="buttons">
-        <button class="blue-button">Get a Quote <i class="fas fa-comments"></i></button>
+      <button class="blue-button"> <a style="color:aliceblue;" href="query.html"> Get Quote <i class="fas fa-comments"></i></button></a>
         <button class="blue-button">Learn More <i class="fas fa-info-circle"></i></button>
     </div>
 
@@ -291,7 +291,7 @@ navMenu.classList.toggle("active");
 <hr class="centered">
 
 <div class="chat-button">
-  <a href="prosbot.html" class="chat-link">
+  <a href="https://api.whatsapp.com/send?phone=0720760261" class="chat-link">
     <i class="fab fa-whatsapp"></i>
   </a>
 </div>
@@ -302,11 +302,11 @@ navMenu.classList.toggle("active");
    .about-radcon-card {
  
     display: grid;
-    max-width: 1000%; /* Adjusted to be responsive */
-    margin: 20px;
+    max-width: 150%; /* Adjusted to be responsive */
+    margin: 8px;
     padding: 10px;
     background-color: #ffffffeb;
-    box-shadow: 5px 4px 6px rgb(0, 0, 0);
+    box-shadow: 5px 4px 6px rgba(210, 210, 210, 0.298);
     border-radius: 10px;
   }
 
@@ -745,6 +745,142 @@ tr:nth-child(even) {
 
 </div>
 
+
+
+
+<style>
+
+
+.coontainer {
+max-width: 290px;
+margin: auto;
+padding: 55px;
+
+  
+  
+
+}
+
+/* Contact Section */
+
+
+#contact h2 {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 40px;
+text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+max-width: 600px;
+margin: 0 auto;
+}
+
+label {
+font-size: 160%;
+margin-bottom:5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+font-size: 18px;
+padding: 10px;
+margin-bottom: 20px;
+border: none;
+border-radius: 5px;
+}
+
+textarea {
+height: 100px;
+}
+
+button[type="submit"] {
+background-color:rgb(0, 65, 177);
+color: #fff;
+width:60%;
+font-size: 145%;
+padding: 15px 1px;
+align-items: center;
+align-content: center;
+align-self:center ;
+border: none;
+border-radius: 5px;
+margin-top: 20px;
+cursor: pointer;
+}
+
+button[type="submit"]:hover {
+background-color:rgb(255, 255, 255);
+color: #0030e0;
+}
+
+
+
+
+
+
+  .coontainer{
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-radcon{
+
+
+    background-color: #ffffff;
+    padding: 30px;
+  }
+</style>
+
+
+
+
+<div class="contact-radcon">
+
+
+<div id="contact">
+  <div class="coontainer" style="background-color: #e2e2e2;">
+
+
+    <h2 style="color: #0030e0;">Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style>
 
 
@@ -796,36 +932,58 @@ footer {
   <hr class="centered">
 </div>
 
-  <footer>
-    <div class="footer-container">
-        <div class="footer-section">
-            <h4>About</h4>
-            <ul>
-                <li><a href="#metal-fabrication">Metal Fabrication</a></li>
-                <li><a href="#milling">Milling</a></li>
-                <li><a href="#custom-fabrication">Custom Fabrication</a></li>
-                <li><a href="#cutting">Cutting</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Contact</h4>
-            <ul>
-                <li>Email: <a href="mailto:info@radcon.com">info@radcon.com</a></li>
-                <li><a href="#send-query">Send Query</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Our Services</h4>
-            <ul>
-                <li><a href="#metal-fabrication">Metal Fabrication</a></li>
-                <li><a href="#milling">Milling</a></li>
-                <li><a href="#custom-fabrication">Custom Fabrication</a></li>
-                <li><a href="#cutting">Cutting</a></li>
-            </ul>
-        </div>
-    </div>
-    <p align="center" style="font-size:9px; padding: 10px;"> &copy; 2023 Radcon. All Rights Reserved. Made by skilsiter</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+              <li><a href="fabrication.html">Metal Fabrication</a></li>
+              <li><a href="milling.html">Milling</a></li>
+              <li><a href="custom.html">Custom Fabrication</a></li>
+              <li><a href="cutting.html">Cutting</a></li>
+              <li><a href="query.html">Get a Quote</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+              <li>Email: <a href="mailto:info@radcon.com">info@radcon.com</a></li>
+              <li><a href="query.html">Send Query</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="fabrication.html">Metal Fabrication</a></li>
+            <li><a href="milling.html">Milling</a></li>
+            <li><a href="custom.html">Custom Fabrication</a></li>
+            <li><a href="cutting.html">Cutting</a></li>
+           
+          </ul>
+      </div>
+  </div>
+  <p align="center" style="font-size:9px; padding: 10px;"> &copy; 2023 Radcon. All Rights Reserved. Made by skilsiter</p>
 </footer>
+
+
+
+
+
+
+
 
 
 </body>
