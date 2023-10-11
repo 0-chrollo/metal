@@ -138,36 +138,287 @@ navMenu.classList.toggle("active");
 
 
 
+
+
 <style>
-
-
     /* Add your CSS styles here for responsiveness and container styling */
     .container {
-    display: grid;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 10px;
+      color: #ffffff;
+    
+    }
+  
+    .card {
+        color:rgb(255, 255, 255);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(25, 25, 25, 0.526);
+    }
+  
+    .card i {
+      font-size: 24px;
+      color: rgb(0, 0, 0); /* Adjust the icon size as needed */
+    }
+  
+    .view-more-btn {
+      margin-top: 20px; /* Add margin to separate the button from the text */
+      display: inline-block;
+      padding: 7px 15px;
+      border: 0px solid;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #000000cf;
+      font-size: 13px;
+      background-color:rgba(255, 255, 255, 0.822);
+    }
+  
+    .liner{
+  
+     font-family: 'Trebuchet MS';
+     color: rgb(255, 255, 255);
+    }
+  </style>
+  
+  <hr class="centered">
+  
 
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 8px;
-  }
-
-  .card {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .card i {
-    font-size: 5px;
-    color: aliceblue; /* Adjust the icon size as needed */
-  }
-</style>
 
 
 
+<div class="bgcolor" style=" background-color: blue;">
+
+
+
+
+
+  <div class="container">
+    <div style="background-image: url(metal.jpg); background-size: 217% auto;background-repeat: no-repeat; background-position:65%;">
+    <div class="card" >
+        <i style="margin-bottom: 10px; background-color:rgb(255, 255, 255); width: 50px; height:40px; padding-top: 8px;border-radius: 8px;" class="fas fa-wrench">(0)</i> <!-- Font Awesome icon -->
+        <h3>Opening Hours</h3>
+        <h5 class="liner">_________</h5>
+        <p style="font-size: 13px; margin-top: 20px;"> view our opening and closing times.</p>
+      
+        <a id="timeBtn" href="#" class="view-more-btn">View Hours</a>
+    </div> 
+    </div>
+  
+  
+  
+    <div style="background-image: url(radcon.jpg); background-size: 100% auto;background-repeat: no-repeat; background-position:65%;">
+        <div class="card" >
+    
+        <i  style="margin-bottom: 10px; filter:none ;  background-color:rgb(255, 255, 255);width: 50px; height:40px; padding-top: 8px;border-radius: 8px;" class="fas fa-hammer">++</i> <!-- Font Awesome icon -->
+        <h3> Address </h3>
+        <h5 class="liner">_________</h5>
+        <p style="font-size: 13px;margin-top: 20px;">Find Our Location and Address. </p>
+        <a id="another" href="#" class="view-more-btn">View Address</a>
+    </div>
+    </div>
+
+    <div style="background-image: url(radcon.jpg); background-size: 100% auto;background-repeat: no-repeat; background-position:65%;">
+        <div class="card" >
+        <i  style="margin-bottom: 10px; background-color:rgb(255, 255, 255);width: 50px; height:40px; padding-top: 8px;border-radius: 8px;" class="fas fa-tools">&</i> <!-- Font Awesome icon -->
+        <h3>Contact</h3>
+        <h5 class="liner">_________</h5>
+        <p style="font-size: 13px; margin-top: 20px;"> Contact Us Instantly </p>
+        <a href="cutting.html" class="view-more-btn">Contact us</a>
+    </div>
+    </div>
+    <div style="background-image: url(metal.jpg); background-size: 217% auto;background-repeat: no-repeat; background-position:65%;">
+        <div class="card" >
+        <i  style="margin-bottom: 10px; background-color: rgb(255, 255, 255); width: 50px; height:40px; padding-top: 8px;border-radius: 8px;" class="fas fa-cog">@</i> <!-- Font Awesome icon -->
+        <h3>Articles</h3>
+        <h5 class="liner">_________</h5>
+        <p style="font-size: 13px; margin-top: 20px;">View Our Articles</p>
+        <a href="custom.html" class="view-more-btn">View Articles</a>
+    </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+<main>
+
+    
+
+        
+        <div class="popup" id="popup">
+            <div class="popup-content">
+
+                <div class="address">
+                    <h4 class="real-add"  style="max-width: 83px;">Mondays</h4>
+                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
+                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
+                  
+                    <h4 class="real-add"  style="max-width: 85px;">Tuesdays</h4>
+                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
+                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
+                  
+                    <h4 class="real-add"  style="max-width: 105px;">Wednesdays</h4>
+                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
+                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
+                  
+                    <h4 class="real-add"  style="max-width: 90px;">Thursdays</h4>
+                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
+                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
+                  
+                    <h4 class="real-add"  style="max-width: 75px;">Fridays</h4>
+                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
+                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
+                  
+                    <h4 class="real-add"  style="max-width: 90px;">Saturdays</h4>
+                  
+                    <h4 class="real-add"  style="max-width: 70px; margin-left:100px;">Closes</h4>
+                    <h4 class="real-add"  style="max-width: 85px;">Sundays</h4>
+                   
+                    <h4 class="real-add"  style="max-width: 70px; margin-left:100px;">Closes</h4>
+
+
+              <button id="okBtn">Okay</button>
+            </div>
+          </div>
+        
+        <style>
+
+        .Our-Address {
+         
+            border-radius: 10px;
+            padding: 8px;
+            display: flex;
+            align-items: flex-start;
+            max-width: 170px; /* Adjust the max-width to your preference */
+            margin: 0 auto; /* Center the address horizontally */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .Our-Address i {
+            font-size: 20px;
+            color: #000000;
+            margin-right: 10px;
+        }
+
+        .Our-Address h3 {
+            margin: 0;
+            color: #000000;
+            font-size: 18px; /* Increase font size for modern look */
+        }
+
+       .real-add{
+
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: flex-start;
+            max-width: 330px; /* Adjust the max-width to your preference */
+            margin: 0 auto; /* Center the address horizontally */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            color: #000000;
+            font-size: 14px; /* Increase font size for the address */
+        }
+
+       .address{
+   padding-left:0px;
+   padding:10px;
+
+       }
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 330px; /* Adjust the width as needed */
+  width: 90%; /* Adjust the width as needed */
+}
+
+#okBtn {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+#timeBtn {
+
+
+}
+
+
+
+
+        </style>
+</main>
+
+<script>
+ const another = document.getElementById('another');
+const createBtn = document.getElementById('timeBtn');
+const popup = document.getElementById('popup');
+const okBtn = document.getElementById('okBtn');
+another.addEventListener('click', function() {
+  popup.style.display = 'flex';
+});
+
+createBtn.addEventListener('click', function() {
+  popup.style.display = 'flex';
+});
+
+
+
+okBtn.addEventListener('click', function() {
+  popup.style.display = 'none';
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 <style>
 
 

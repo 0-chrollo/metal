@@ -27,3 +27,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   document.getElementById('email').value = '';
   document.getElementById('message').value = '';
 });
+
+
+
+
+
+
+
