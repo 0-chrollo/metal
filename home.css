@@ -2,11 +2,11 @@
  
  
  
- html { font-size: 62.5%; font-family:  sans-serif; }
+ html { font-size: 62.5%; font-family: cursive; }
  
  
  
- li { list-style: none; } 
+ li { list-style:circle; } 
  
  a { text-decoration: none; }
 
@@ -122,7 +122,7 @@ background-color:transparent }
   }
   
   h1 {
-    font-family:Georgia;
+    font-family: cursive;
     text-shadow: 30px;
     color:#cdd8f2;
  
