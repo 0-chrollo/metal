@@ -137,355 +137,146 @@ navMenu.classList.toggle("active");
 
 
 
-
-
 <style>
-    /* Add your CSS styles here for responsiveness and container styling */
-    .container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 10px;
-      color: #ffffff;
-      
+
+  .about-radcon-card {
+   display: grid;
+   
+   max-width: 100%; /* Adjusted to be responsive */
+   margin: 3px;
+   padding: 10px;
+   background-color: #ffffffe0;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   border-radius: 8px;
+  }
+  
+  .card-title {
+   text-align: center;
+  }
+  
+  .card-title{
+  
+   font-size: 180%;
+   background-color:rgb(0, 65, 177);
+    height: 40px;
+   
+    color:#fff;
+    border-radius: 5px;
+    padding-top: 8px;
     
-    }
-    .card {
-        color:rgb(255, 255, 255);
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      padding: 25px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      background-color: rgba(25, 25, 25, 0.526);
-    }
   
-    .card i {
-      font-size: 24px;
-      color: rgb(0, 0, 0); /* Adjust the icon size as needed */
-    }
   
-    .view-more-btn {
-      margin-top: 20px; /* Add margin to separate the button from the text */
-      display: inline-block;
-      padding: 7px 15px;
-      border: 0px solid;
-      border-radius: 5px;
-      text-decoration: none;
-      color: #000000cf;
-      font-size: 13px;
-      background-color:rgba(255, 255, 255, 0.822);
-    }
+  }
   
-    .liner{
   
-     font-family: 'Trebuchet MS';
-     color: rgb(255, 255, 255);
-    }
+  
+  
+  .exp{
+  
+  
+  font-size: 13px;
+  
+  margin-top: 25px;
+  
+  }
+  @media screen and (min-width: 768px) {
+   /* For screens wider than 768px */
+   .about-radcon-card {
+     max-width: 980px;
+     margin: 20px auto;
+   }
+  }
+  
+  
   </style>
   
-  <hr class="centered">
-  
-
-
-
-
-<div class="bgcolor" style=" background-color: rgb(255, 255, 255);">
-
-
-
-
-
-  <div class="container">
-    <div style=" background-position:65%;">
-    <div class="card" >
-        <i style="margin-bottom: 10px; background-color:rgb(255, 255, 255); width: 50px; height:40px; padding-top: 8px;border-radius: 8px;" class="fas fa-wrench">(0)</i> <!-- Font Awesome icon -->
-        <h3>Opening Hours</h3>
-        <h5 class="liner">_________</h5>
-        <p style="font-size: 13px; margin-top: 20px;"> view our opening and closing times.</p>
-      
-        <a id="timeBtn" href="#" class="view-more-btn">View Hours</a>
-    </div> 
-    </div>
-  
-  
-  
-    <div style="background-position:65%;">
-        <div class="card" >
+  <div style="background-color: rgb(255, 255, 255); padding:1px;margin-top: 10px;  background-size:cover;">
+    <section class="about-radcon-card" style="margin-top: 15px; ">
     
-        <i  style="margin-bottom: 10px; filter:none ;  background-color:rgb(255, 255, 255);width: 50px; height:40px; padding-top: 8px;border-radius: 8px;" class="fas fa-hammer">++</i> <!-- Font Awesome icon -->
-        <h3> Address </h3>
-        <h5 class="liner">_________</h5>
-        <p style="font-size: 13px;margin-top: 20px;">Find Our Location and Address. </p>
-        <a id="llocation" href="#" class="view-more-btn">View Address</a>
-    </div>
-    </div>
-
-    <div style="background-position:65%;">
-        <div class="card" >
-        <i  style="margin-bottom: 10px; background-color:rgb(255, 255, 255);width: 50px; height:40px; padding-top: 8px;border-radius: 8px;" class="fas fa-tools">&</i> <!-- Font Awesome icon -->
-        <h3>Contact</h3>
-        <h5 class="liner">_________</h5>
-        <p style="font-size: 13px; margin-top: 20px;"> Contact Us Instantly </p>
-        <a   id="contactor" href="#" class="view-more-btn">Contact us</a>
-    </div>
-    </div>
-    <div style=" background-position:65%;">
-        <div class="card" >
-        <i  style="margin-bottom: 10px; background-color: rgb(255, 255, 255); width: 50px; height:40px; padding-top: 8px;border-radius: 8px;" class="fas fa-cog">@</i> <!-- Font Awesome icon -->
-        <h3>Articles</h3>
-        <h5 class="liner">_________</h5>
-        <p style="font-size: 13px; margin-top: 20px;">View Our Articles</p>
-        <a href="#" class="view-more-btn">View Articles</a>
-    </div>
-    </div>
-
-  </div>
-
-</div>
-
-
-
-
-
-<main>
-
+      <h3 class="card-title"><i class="fas fa-industry icon" style="padding-right:10px; font-size: 20px;"></i>Client Query</h3>
     
-
-        
-        <div class="popup" id="popup">
-            <div class="popup-content">
-
-                <div class="address">
-                    <h4 class="real-add"  style="max-width: 83px;">Mondays</h4>
-                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
-                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
-                  
-                    <h4 class="real-add"  style="max-width: 85px;">Tuesdays</h4>
-                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
-                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
-                  
-                    <h4 class="real-add"  style="max-width: 105px;">Wednesdays</h4>
-                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
-                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
-                  
-                    <h4 class="real-add"  style="max-width: 90px;">Thursdays</h4>
-                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
-                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
-                  
-                    <h4 class="real-add"  style="max-width: 75px;">Fridays</h4>
-                    <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
-                    <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
-                  
-                    <h4 class="real-add"  style="max-width: 90px;">Saturdays</h4>
-                  
-                    <h4 class="real-add"  style="max-width: 70px; margin-left:100px;">Closes</h4>
-                    <h4 class="real-add"  style="max-width: 85px;">Sundays</h4>
-                   
-                    <h4 class="real-add"  style="max-width: 70px; margin-left:100px;">Closes</h4>
-
-
-              <button id="okBtn">Okay</button>
-            </div>
-          </div>
-        </div>
-
-
-  <div class="pop" id="pop">
-            <div class="popup-cont">
-
-                <div class="locator">
-                    <h4 class="real-loc"  style="max-width: 83px;">Map</h4>
-                    <h4 class="real-loc"  style="max-width: 155px; margin-left:100px;">This is Our Location</h4>
-              <button id="ok">Done!</button>
-            </div>
-          </div>
-
-
-
+      <p  class="exp"><i class="fas fa-users exp-icon" style="padding: 7px; color: rgb(7, 7, 174);"></i>Radcon Engineering, a beacon of excellence in the realm of metal fabrication,
+         stands tall as an emblem of trustworthiness and prestige.
+         Our journey through the years has been marked by a relentless pursuit of craftsmanship and innovation,
+         which has solidified our position as a go-to partner for clients across diverse industries.
+         In our relentless quest for perfection, we have forged robust and enduring relationships with a myriad of clients.
+        These relationships are not just partnerships; 
+         they are a testament to our unwavering commitment to delivering the highest quality solutions. 
+         Our clients hail from a broad spectrum of industries,
+         ranging from aerospace and automotive to and manufacturing.
+        They come to us with their most demanding projects,and 
+         fully confident in our ability to meet and exceed their expectations. and enduring relationships with a myriad of clients.
+         These relationships are not just partnerships; 
+          they are a testament to our unwavering commitment to delivering the highest quality solutions.  exceed their expectations. and enduring relationships and being aware.
+          it and exceed their expectations. and enduring relationships with a myriad of clients.
+         These relationships are not just partnerships; 
+          they are a testament to our unwavering commitme
+      for perfection, we have forged robust and enduring relationships with a myriad of clients.
+        These relationships are not just partnerships; 
+         they are a testament to our unwavering commitment to delivering the highest quality solutions. 
+         Our clients hail from a broad spectrum of industries,
+         ranging from aerospace and automotive to construction and manufacturing.
+        They come to us with their most demanding projects,
+         fully confident in our ability to meet and exceed their expectations. forged robust and enduring relationships with a myriad of clients.
+         These relationships are not just partnerships; 
+          they are a testament to our it is to delivering the highest quality solutions. 
+          Our clients hail from a broad spectrum of industries,
+          ranging from aerospace and automotin  just partnerships; 
+          they are a testament to our unwavering commitment to delivering the highest quality solutions. 
+          Our clients hail from a broad spectrum of industries,
+          just partnerships; 
+          they are a testament to our unwavering commitment to delivering the highest quality solutions. 
+          Our clients hail from a broad spectrum of industries.</p> 
+          <br/>
+  <h2>Commitment</h2><br/>
+  <p>  our ability to meet and exceed their expectations. and enduring relationships with a myriad of clients.
+    These relationships are not just partnerships; 
+     they are a testament to our unwavering commitment to delivering the highest quality solutions.  exceed their expectations. and enduring relationships and being aware.
+     it and exceed their expectations. and enduring relationships with a myriad of clients.
+    These relationships are not just partnerships; 
+     they are a testament to our unwavering commitme
+  for perfection, we have forged robust and enduring relationships with a myriad of clients.
+   These relationships are not just partnerships; 
+    they are a testament to our unwavering commitment to delivering the highest quality solutions. 
+    Our clients hail from a broad spectrum of industries,
+    ranging from aerospace and automotive to construction and manufacturing.
+   They come to us with their most demanding projects,
+    fully confident in our ability to meet and exceed their expectations. forged robust and enduring relationships with a myriad of clients.
+    These relationships are not just partnerships; 
+     they are a testament to our it is to delivering the highest quality solutions. 
+     Our clients hail from a broad spectrum of industries,
+     ranging from aerospace and automotin  just partnerships; 
+     they are a testament to our unwavering commitment to delivering the highest quality solutions. 
+     Our clients hail from a broad spectrum of industries,
+     just partnerships; 
+     they are a testament to our unwavering commitment to delivering</p>
+    
+      <div style="padding: 1px;margin-top:-5px;">
+       
+    
+  
+      </div>
+    </section>
   </div>
   
-
-          <div class="contact-pop" id="contact-pop">
-            <div class="popup-field">
-                <div class="contacting">
-                    <h4 class="real-cont"  style="max-width: 83px;">Phone: 07208745621</h4>
-                    <h4 class="real-cont"  style="max-width: 155px; margin-left:100px;">Send Us An Email:-</h4>
-              <button id="done">Done!</button>
-            </div>
-          </div>
-
-</main>
-
-
-        <style>
-
-        .Our-Address {
-         
-            border-radius: 10px;
-            padding: 8px;
-            display: flex;
-            align-items: flex-start;
-            max-width: 170px; /* Adjust the max-width to your preference */
-            margin: 0 auto; /* Center the address horizontally */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .Our-Address i {
-            font-size: 20px;
-            color: #000000;
-            margin-right: 10px;
-        }
-
-        .Our-Address h3 {
-            margin: 0;
-            color: #000000;
-            font-size: 18px; /* Increase font size for modern look */
-        }
-
-       .real-add,.real-loc,.real-cont{
-
-            border-radius: 10px;
-            padding: 8px;
-            display: flex;
-            align-items: flex-start;
-            max-width: 330px; /* Adjust the max-width to your preference */
-            margin: 0 auto; /* Center the address horizontally */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 0;
-            color: #000000;
-            font-size: 14px; /* Increase font size for the address */
-        }
-
-       .address, .locator ,.contacting{
-   padding-left:0px;
-   padding:10px;
-
-       }
-
-
-.popup,.pop, .contact-pop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.popup-content,.popup-cont,.popup-field {
-  background-color: #f1f1f1;
-  padding: 7px;
-  border-radius: 5px;
-  text-align: center;
-  max-width: 400px; /* Adjust the width as needed */
-  width: 95%; /* Adjust the width as needed */
-
-}
-
-#okBtn,#ok,#done {
-  background-color: rgb(5, 54, 161);
-  color: white;
-  border: none;
-  border-radius: 15px;
-  padding: 13px 25px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-
-
-
-
-
-        </style>
-</main>
-
-<script>
-
-const createBtn = document.getElementById('timeBtn');
-
-const popup = document.getElementById('popup');
-const okBtn = document.getElementById('okBtn');
-timeBtn.addEventListener('click', function() {
-  popup.style.display = 'flex';
-});
-
-createBtn.addEventListener('click', function() {
-  popup.style.display = 'flex';
-});
-
-
-
-okBtn.addEventListener('click', function() {
-  popup.style.display = 'none';
-});
-
-
-const lloc = document.getElementById('llocation');
-const pop = document.getElementById('pop');
-const ok = document.getElementById('ok');
-llocation.addEventListener('click', function() {
-  pop.style.display = 'flex';
-});
-
-lloc.addEventListener('click', function() {
-  pop.style.display = 'flex';
-});
-
-
-
-ok.addEventListener('click', function() {
-  pop.style.display = 'none';
-});
-
-
-
-
-const find = document.getElementById('contactor');
-const contactpop = document.getElementById('contact-pop');
-const done = document.getElementById('done');
-contactor.addEventListener('click', function() {
-  contactpop.style.display = 'flex';
-});
-
-find.addEventListener('click', function() {
-  contactpop.style.display = 'flex';
-});
-
-
-
-done.addEventListener('click', function() {
-  contactpop.style.display = 'none';
-});
-
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-<style>
-
+    </div>
+  
+  
+    <hr class="centered">
+  
+  
+  
+    <style>
+  
+  .centered {
+      border: none;
+      border-top: 3px solid #0030e0;
+      margin: 10px 35%;
+      border-radius: 500px;
+   
+  
+  }
+  
 
     footer {
       font-family: Arial, sans-serif;
