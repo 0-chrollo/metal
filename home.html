@@ -385,7 +385,7 @@ margin-top: 25px;
   
 
   <h4  id="timeb" align="center" class="centered-text" style="margin-top: 15px; font-size: 14px; color: rgb(0, 65, 177);"><i class="fas fa-cogs rounded-sign-icon"></i> What Sets Us Apart?</h4>
-  <div style="padding: 1px; margin-top:-5px;">
+  <div id="mapb" style="padding: 1px; margin-top:-5px;">
    
   </div>
   <p class="exp"><i  style="color:rgb(0, 65, 177);" class="fas fa-check-circle exp-icon"></i> <b style="color:rgb(0, 65, 177);">Uncompromising Precision:</b> At Radcon Engineering,
@@ -556,7 +556,7 @@ margin-top: 25px;
       <h3> Address </h3>
       <h5 class="liner">_________</h5>
       <p style="font-size: 13px;margin-top: 20px;">Find Our Location and Address. </p>
-      <a id="llocation" href="#" class="view-more-btn">View Address</a>
+      <a id="llocation" href="#mapb" class="view-more-btn">View Address</a>
   </div>
   </div>
 
@@ -614,7 +614,7 @@ margin-top: 25px;
                 
                   <h4 class="real-add"  style="max-width: 75px;">Fridays</h4>
                   <h4 class="real-add"  style="max-width: 155px; margin-left:100px;">Opening - 07:30AM</h4>
-                  <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 17:00PM</h4>
+                  <h4 class="real-add"  style="max-width: 140px; margin-left:100px;">Closes - 14:00PM</h4>
                 
                   <h4 class="real-add"  style="max-width: 90px;">Saturdays</h4>
                 
@@ -634,9 +634,19 @@ margin-top: 25px;
           <div class="popup-cont">
 
               <div class="locator">
-                  <h4 class="real-loc"  style="max-width: 83px;">Map</h4>
-                  <h4 class="real-loc"  style="max-width: 155px; margin-left:100px;">This is Our Location</h4>
-            <button id="ok">Done!</button>
+
+
+                  <h4 class="real-loc"  style="max-width: 83px;">Map</h4><br/>
+                  <!--Map Here and Should be Centered -->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13240.080996606332!2d25.6099461!3d-33.9406073!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad3abf356aaab%3A0xe4d64c725f7da8b8!2sRadcon%20Engineering!5e0!3m2!1sen!2sza!4v1705248027320!5m2!1sen!2sza" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br/>
+
+                  <h4 class="real-loc"  style="max-width: 155px; margin-left:100px;"></h4>
+                  <!--Address Here-->
+
+
+
+
+            <button id="ok" href="#mapb">Done!</button>
           </div>
         </div>
 
@@ -745,6 +755,8 @@ cursor: pointer;
 
 <script>
 
+
+//Opening Hours 
 const createBtn = document.getElementById('timeBtn');
 
 const popup = document.getElementById('popup');
@@ -763,6 +775,7 @@ okBtn.addEventListener('click', function() {
 popup.style.display = 'none';
 });
 
+//Address Starts Here
 
 const lloc = document.getElementById('llocation');
 const pop = document.getElementById('pop');
@@ -782,7 +795,7 @@ pop.style.display = 'none';
 });
 
 
-
+//Contact Starts Here
 
 const find = document.getElementById('contactor');
 const contactpop = document.getElementById('contact-pop');
@@ -1115,6 +1128,11 @@ footer {
   color: #00bcd4;
 }
 </style>
+
+
+
+
+
 
 
 
