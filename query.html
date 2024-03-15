@@ -137,134 +137,119 @@ navMenu.classList.toggle("active");
 
 
 
-<style>
-
-  .about-radcon-card {
-   display: grid;
-   
-   max-width: 100%; /* Adjusted to be responsive */
-   margin: 3px;
-   padding: 10px;
-   background-color: #ffffffe0;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-   border-radius: 8px;
-  }
-  
-  .card-title {
-   text-align: center;
-  }
-  
-  .card-title{
-  
-   font-size: 180%;
-   background-color:rgb(0, 65, 177);
-    height: 40px;
-   
-    color:#fff;
-    border-radius: 5px;
-    padding-top: 8px;
-    
-  
-  
-  }
-  
-  
-  
-  
-  .exp{
-  
-  
-  font-size: 13px;
-  
-  margin-top: 25px;
-  
-  }
-  @media screen and (min-width: 768px) {
-   /* For screens wider than 768px */
-   .about-radcon-card {
-     max-width: 980px;
-     margin: 20px auto;
-   }
-  }
-  
-  
-  </style>
-  
-  <div style="background-color: rgb(255, 255, 255); padding:1px;margin-top: 10px;  background-size:cover;">
-    <section class="about-radcon-card" style="margin-top: 15px; ">
-    
-      <h3 class="card-title"><i class="fas fa-industry icon" style="padding-right:10px; font-size: 20px;"></i>Client Query</h3>
-    
-      <p  class="exp"><i class="fas fa-users exp-icon" style="padding: 7px; color: rgb(7, 7, 174);"></i>Radcon Engineering, a beacon of excellence in the realm of metal fabrication,
-         stands tall as an emblem of trustworthiness and prestige.
-         Our journey through the years has been marked by a relentless pursuit of craftsmanship and innovation,
-         which has solidified our position as a go-to partner for clients across diverse industries.
-         In our relentless quest for perfection, we have forged robust and enduring relationships with a myriad of clients.
-        These relationships are not just partnerships; 
-         they are a testament to our unwavering commitment to delivering the highest quality solutions. 
-         Our clients hail from a broad spectrum of industries,
-         ranging from aerospace and automotive to and manufacturing.
-        They come to us with their most demanding projects,and 
-         fully confident in our ability to meet and exceed their expectations. and enduring relationships with a myriad of clients.
-         These relationships are not just partnerships; 
-          they are a testament to our unwavering commitment to delivering the highest quality solutions.  exceed their expectations. and enduring relationships and being aware.
-          it and exceed their expectations. and enduring relationships with a myriad of clients.
-         These relationships are not just partnerships; 
-          they are a testament to our unwavering commitme
-      for perfection, we have forged robust and enduring relationships with a myriad of clients.
-        These relationships are not just partnerships; 
-         they are a testament to our unwavering commitment to delivering the highest quality solutions. 
-         Our clients hail from a broad spectrum of industries,
-         ranging from aerospace and automotive to construction and manufacturing.
-        They come to us with their most demanding projects,
-         fully confident in our ability to meet and exceed their expectations. forged robust and enduring relationships with a myriad of clients.
-         These relationships are not just partnerships; 
-          they are a testament to our it is to delivering the highest quality solutions. 
-          Our clients hail from a broad spectrum of industries,
-          ranging from aerospace and automotin  just partnerships; 
-          they are a testament to our unwavering commitment to delivering the highest quality solutions. 
-          Our clients hail from a broad spectrum of industries,
-          just partnerships; 
-          they are a testament to our unwavering commitment to delivering the highest quality solutions. 
-          Our clients hail from a broad spectrum of industries.</p> 
-          <br/>
-  <h2>Commitment</h2><br/>
-  <p>  our ability to meet and exceed their expectations. and enduring relationships with a myriad of clients.
-    These relationships are not just partnerships; 
-     they are a testament to our unwavering commitment to delivering the highest quality solutions.  exceed their expectations. and enduring relationships and being aware.
-     it and exceed their expectations. and enduring relationships with a myriad of clients.
-    These relationships are not just partnerships; 
-     they are a testament to our unwavering commitme
-  for perfection, we have forged robust and enduring relationships with a myriad of clients.
-   These relationships are not just partnerships; 
-    they are a testament to our unwavering commitment to delivering the highest quality solutions. 
-    Our clients hail from a broad spectrum of industries,
-    ranging from aerospace and automotive to construction and manufacturing.
-   They come to us with their most demanding projects,
-    fully confident in our ability to meet and exceed their expectations. forged robust and enduring relationships with a myriad of clients.
-    These relationships are not just partnerships; 
-     they are a testament to our it is to delivering the highest quality solutions. 
-     Our clients hail from a broad spectrum of industries,
-     ranging from aerospace and automotin  just partnerships; 
-     they are a testament to our unwavering commitment to delivering the highest quality solutions. 
-     Our clients hail from a broad spectrum of industries,
-     just partnerships; 
-     they are a testament to our unwavering commitment to delivering</p>
-    
-      <div style="padding: 1px;margin-top:-5px;">
-       
-    
-  
-      </div>
-    </section>
+<div class="container">
+  <div class="form-container">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Your Email">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <button type="submit">Submit</button>
+      </form>
   </div>
+  <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.061606460304!2d-122.08389438437367!3d37.38605137983655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbcf8e47c5699%3A0xd33593b7861c563b!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1636510282581!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</div>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container, .map-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    max-width: 100%;
+    border: 0;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-container, .map-container {
+        width: 48%;
+    }
+
+    .form-container {
+        padding: 60px;
+    }
+}
+
+
+</style>
   
-    </div>
   
-  
-    <hr class="centered">
-  
-  
+
   
     <style>
   
